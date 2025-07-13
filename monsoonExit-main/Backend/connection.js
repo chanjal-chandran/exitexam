@@ -1,8 +1,14 @@
 const mongoose = require("mongoose");
-//Write missing code here
+
+const mongoURI = "mongodb+srv://chanjalchandran:chanjalchandran@blog.vzvrscm.mongodb.net/?retryWrites=true&w=majority&appName=Blog";
+
 mongoose
   .connect(
-   
+    mongoURI,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    }
   )
   .then(() => {
     console.log("Connected to DB");

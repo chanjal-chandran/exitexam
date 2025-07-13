@@ -34,7 +34,7 @@ const Home = () => {
   };
 
   const handleUpdate = (id) => {
-    navigate(/update/${id});
+    navigate("/update/${id}");
   };
 
   return (
